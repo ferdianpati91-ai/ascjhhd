@@ -1,3 +1,4 @@
+
 <?php session_start(); ?>
 
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
 
 <body>
     <h2>Login</h2>
-    TES
+    
     <?php if (isset($_SESSION['error'])): ?>
         <p style="color:red;">
             <?= $_SESSION['error']; ?>

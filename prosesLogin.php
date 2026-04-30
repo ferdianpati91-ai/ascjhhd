@@ -6,7 +6,7 @@ if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $check = "SELECT * FROM Users WHERE username='$username' AND password='$password'";
+    $check = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result = mysqli_query($koneksi, $check);
     $data = mysqli_fetch_assoc($result);
 
